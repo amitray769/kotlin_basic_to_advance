@@ -7,8 +7,15 @@ package collection.set
  * To create a mutable set (MutableSet), use the mutableSetOf() function.
 **/
 
-private fun createASet() {
+private fun createASet()  {
     val readOnlySet = setOf("apple", "banana","cherry")
+    println(readOnlySet)
+
+    val mutableSet = mutableSetOf("apple", "banana","cherry")
+    //Trying to add a duplicate element
+    mutableSet.add("apple") //element will not be duplicated
+    mutableSet.add("guava")
+    println(mutableSet)
 
 }
 
