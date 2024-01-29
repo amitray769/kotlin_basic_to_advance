@@ -14,11 +14,13 @@ val readOnlyJuiceMap = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
     println(readOnlyJuiceMap)
 
     val mutableMap = mutableMapOf<String,Int>("apple" to 100, "kiwi" to 190, "orange" to 100)
-    println()
+    mutableMap.put("kinu",200)
+    mutableMap["chiku"] = 300
+    println(mutableMap)
 }
 
 
 
 fun main() {
-
+createAMap()
 }
