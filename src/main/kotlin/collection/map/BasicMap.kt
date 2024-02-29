@@ -17,6 +17,22 @@ val readOnlyJuiceMap = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
     mutableMap.put("kinu",200)
     mutableMap["chiku"] = 300
     println(mutableMap)
+
+    /**  To check if a specific key is already included in a map, use the .containsKey() function:
+     **/
+    if (readOnlyJuiceMap.containsKey("apple"))
+        println("Apple is there with price: ${readOnlyJuiceMap["apple"]}")
+
+    /**
+    To check that a key or value is in a map, use the in operator: **/
+/*    println("apple" in <String> readOnlyJuiceMap.keys) // return true
+    println("100" in readOnlyJuiceMap.values)   //returns false
+    println("Abra ka dabra" in readOnlyJuiceMap.values) //return false*/
+}
+
+ fun mapOperations() {
+
+
 }
 
 
